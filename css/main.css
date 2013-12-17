@@ -2,6 +2,16 @@ body {
     background-color: #DDDDDD;
 }
 
+.row {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .search-area {
     margin-bottom: 10px;
 }
+
+.map {
+    height: 400px;
+}
+

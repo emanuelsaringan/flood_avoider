@@ -5,7 +5,7 @@ var map = null;
 function initialize() {
     // START DEBUG
     document.getElementById('start').value = 'Ateneo De Manila University';
-    document.getElementById('end').value = 'SM Fairview';
+    document.getElementById('end').value = 'De La Salle University';
     // END DEBUG
 
     directionsDisplay = new google.maps.DirectionsRenderer();
@@ -18,6 +18,7 @@ function initialize() {
 
     map = new google.maps.Map(document.getElementById('map'), mapOptions);
     directionsDisplay.setMap(map);
+    directionsDisplay.setPanel(document.getElementById('directions_panel'));
 }
 
 function calcRoute() {
@@ -27,22 +28,20 @@ function calcRoute() {
     var request = {
         origin: start,
         destination: end,
-        travelMode: google.maps.TravelMode.DRIVING
+        travelMode: google.maps.TravelMode.DRIVING,
+        region: 'phi',
+        provideRouteAlternatives: true
     };
 
-    var directionsURL = 'http://maps.googleapis.com/maps/api/directions/json';
-    directionsURL += '?origin=' + encodeURIComponent(start);
-    directionsURL += '&destination=' + encodeURIComponent(end);
-    directionsURL += '&sensor=false';
-    directionsURL += '&mode=driving';
+    directionsService.route(request, function(response, status) {
+        console.log(response.routes.length);
 
-    // directionsService.route(request, function(response, status) {
-    //     console.log(response);
-
-    //     if (status == google.maps.DirectionsStatus.OK) {
-    //       directionsDisplay.setDirections(response);
-    //     }
-    // });
+        if (status == google.maps.DirectionsStatus.OK) {
+          directionsDisplay.setDirections(response);
+        } else {
+            alert('ERROR: ' + status);
+        }
+    });
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);

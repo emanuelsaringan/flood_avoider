@@ -6,27 +6,30 @@
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <link rel="stylesheet" href="css/main.css"/>
     </head>
+    
     <body>
         <div class="container">
             <h1>Flood Avoider</h1>
 
-            <div class="form-inline search-area">
-                <div class="form-group">
-                    <input type="text" id="start" class="form-control" placeholder="From"></input>
-                </div>
-
-                <div class="form-group">
-                    <input type="text" id="end" class="form-control" placeholder="To"></input>
-                </div>
-
-                <div class="form-group">
-                    <button id="plot" class="btn btn-primary" onclick="calcRoute();">Plot</button>
-                </div>
+            <div class="row">
+                <input type="text" id="start" class="form-control" placeholder="From"></input>
             </div>
 
-            <div id="map" style="width: 960px; height: 400px;">
+            <div class="row">
+                <input type="text" id="end" class="form-control" placeholder="To"></input>
             </div>
 
+            <div class="row">
+                <button id="plot" class="btn btn-primary col-md-12" onclick="calcRoute();">Plot</button>
+            </div>
+
+            <div class="row">
+                <div id="map" class="map"></div>
+            </div>
+
+            <div class="row">
+                <div id="directions_panel" class="directions_panel"></div>
+            </div>
         </div>
 
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARQyHpN2E6l2ZX8ITOKXlOF0qpZJ-fhg8&sensor=false"></script>
