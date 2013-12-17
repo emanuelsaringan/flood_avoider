@@ -3,10 +3,8 @@ var directionsService = new google.maps.DirectionsService();
 var map = null;
 
 function initialize() {
-    // START DEBUG
     document.getElementById('start').value = 'Ateneo De Manila University';
     document.getElementById('end').value = 'De La Salle University';
-    // END DEBUG
 
     directionsDisplay = new google.maps.DirectionsRenderer();
     var admu = new google.maps.LatLng(14.6397, 121.0780);
@@ -34,12 +32,10 @@ function calcRoute() {
     };
 
     directionsService.route(request, function(response, status) {
-        console.log(response.routes.length);
-
         if (status == google.maps.DirectionsStatus.OK) {
           directionsDisplay.setDirections(response);
         } else {
-            alert('ERROR: ' + status);
+            alert('Unable to route.\nERROR: ' + status);
         }
     });
 }

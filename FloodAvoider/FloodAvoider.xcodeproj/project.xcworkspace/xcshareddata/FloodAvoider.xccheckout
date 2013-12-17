@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8A5224D9-0086-4B66-964A-05DA48E70046</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FloodAvoider</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CCA2E4E2-1F6F-46B9-9C70-000EDB66DF28</key>
+		<string>https://github.com/emanuelsaringan/flood_avoider.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FloodAvoider/FloodAvoider.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CCA2E4E2-1F6F-46B9-9C70-000EDB66DF28</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/emanuelsaringan/flood_avoider.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CCA2E4E2-1F6F-46B9-9C70-000EDB66DF28</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CCA2E4E2-1F6F-46B9-9C70-000EDB66DF28</string>
+			<key>IDESourceControlWCCName</key>
+			<string>flood_avoider</string>
+		</dict>
+	</array>
+</dict>
+</plist>
